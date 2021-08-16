@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+    <title>Form</title>
+    <style>
+        body{
+            background-image: url('ap.jpg');
+        }
+    </style>
+  </head>
+  <body class="w-75 mx-auto my-4">
+      <form>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" class="form-control" placeholder="Enter name">
+          </div>
+          <div class="form-group">
+            <label for="lastname">Lastname</label>
+            <input type="text" id="lastname" class="form-control" placeholder="Enter Lastname">
+          </div> 
+          <div class="form-group">
+            <label for="gender">Gender</label><br>
+            <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-control-input" id="k" name="radio">
+                <label class="custom-control-label" for="k">Kız</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-control-input" id="E" name="radio">
+                <label class="custom-control-label" for="E">Erkek</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="Email">Email</label>
+            <input type="email" id="Email" class="form-control" placeholder="Enter email address">
+            <small class="form-text text-muted">Please enter a correct email*</small><!--soluk şekilde uyarı mesajı çıkar.-->
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" class="form-control" placeholder="Enter password">
+          </div>
+          <div class="form-group">
+            <label for="city">City</label>
+            <select name="city" id="city" class="form-control">
+                <option value="1">Kırşehir</option>
+                <option value="2">Nevşehir</option>
+                <option value="3">Ankara</option>
+                <option value="4">Yozgat</option>
+                <option value="5">Mersin</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="Message">Message</label>
+            <textarea name="message" id="Message" rows="5" class="form-control" placeholder="message"></textarea>
+          </div>
+          <div class="form-group">
+              <legend>Hobies</legend>
+              <div class="form-check">
+                  <label class="form-check-label">
+                      <input type="checkbox">Kitap okumak
+                  </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label">
+                    <input type="checkbox">Yürüyüş yapmak
+                </label>
+            </div>
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input type="checkbox">Sinemaya gitmek
+                </label>
+            </div>
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input type="checkbox">Kod yazmak
+                </label>
+            </div>
+          </div>
+      </form>
+      <div>
+        <label for="r1">Eğitim Durumunuz</label> <br>
+        <div class="custom-control custom-radio custom-control-inline"> <!--custom-control-inline:radio butonları yan yana getirir.-->
+            <input type="radio" class="custom-control-input" id="r1" name="radio">
+            <label class="custom-control-label" for="r1">İlkokul</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" class="custom-control-input" id="r2" name="radio">
+            <label class="custom-control-label" for="r2">Ortaokul</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" class="custom-control-input" id="r3" name="radio">
+            <label class="custom-control-label" for="r3">Lise</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" class="custom-control-input" id="r4" name="radio">
+            <label class="custom-control-label" for="r4">Önlisans</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" class="custom-control-input" id="r5" name="radio">
+            <label class="custom-control-label" for="r5">Lisans</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" class="custom-control-input" id="r6" name="radio">
+            <label class="custom-control-label" for="r6">Yüksek lisans</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" class="custom-control-input" id="r7" name="radio">
+            <label class="custom-control-label" for="r7">Doktora</label>
+        </div>
+      </div>
+      <br>
+      <button type="button" class="btn btn-sm btn-outline-danger">Kaydet</button>
+   
+   
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  </body>
+</html>
